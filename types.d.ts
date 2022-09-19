@@ -41,3 +41,14 @@ export interface IDecoded {
   picture: string;
   sub: string;
 }
+
+export interface IProps {
+  postDetails: Video
+}
+
+export interface IComment {
+  comment: string;
+  lenght?: number;
+  _key: string;
+  postedBy: { _ref: string; _id: string };
+}
